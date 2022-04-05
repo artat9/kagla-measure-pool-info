@@ -69,6 +69,7 @@ export const getKaglaInfo = async () => {
       address: d.address,
       baseAPY: d.apy,
       rewardTokens: [
+        // currently supports only KGL token as reward
         {
           token: kglToken.data,
           // If you don't vote at the gauge, you will get minimum amount of rewards
