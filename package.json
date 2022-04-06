@@ -1,5 +1,5 @@
 {
-  "name": "kagla-measure-pool-info",
+  "name": "measure-pool-info",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,13 +19,9 @@
     "web3": "^1.7.1"
   },
   "devDependencies": {
-    "@swc/core": "^1.2.154",
-    "@swc/jest": "^0.2.20",
     "@typechain/ethers-v5": "^9.0.0",
     "@types/jest": "^27.4.1",
     "@types/node": "17.0.21",
-    "@types/react": "^17.0.40",
-    "@types/swagger-ui-react": "^4.1.1",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "jest": "^27.5.1",
