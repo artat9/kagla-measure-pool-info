@@ -61,7 +61,7 @@ export const getKaglaInfo = async () => {
   const lpTokenAddresses = poolInfoResponse.data.pools.map(
     (p) => p.lpToken.address,
   )
-  const response = poolInfoResponse.data.pools.map((d) => {
+  return poolInfoResponse.data.pools.map((d) => {
     const tvl = d.isMeta ? calcMetaTVL(d, lpTokenAddresses) : calcTVL(d.lpToken)
     return {
       name: d.name,
@@ -79,7 +79,6 @@ export const getKaglaInfo = async () => {
       tvl: tvl.toString(),
     }
   })
-  return response
 }
 
 const calcTVL = (lpToken: LPToken) => {
